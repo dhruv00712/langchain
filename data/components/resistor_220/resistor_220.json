@@ -1,0 +1,32 @@
+{
+  "name": "220Ω Resistor",
+  "category": "Passive Component",
+  "description": "A 220 ohm resistor commonly used for limiting current to LEDs and small loads.",
+  "svgPath": "./resistor_220.svg",
+
+  "technicalSpecifications": {
+    "resistance": "220Ω",
+    "tolerance": "±5%",
+    "powerRating": "0.25W",
+    "operatingTemperature": "-55°C to +155°C"
+  },
+
+  "operatingVoltage": "Up to 250V (depends on power rating)",
+  "operatingTemperature": "-55°C to +155°C",
+
+  "connections": [
+    "Connect in series with LEDs",
+    "Use for current limiting or voltage division"
+  ],
+
+  "applications": [
+    "LED current limiting",
+    "Voltage dividers",
+    "Biasing circuits"
+  ],
+
+  "safetyNotes": [
+    "Do not exceed power rating.",
+    "Check resistance value using color code."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "langchain",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/main.ts",
+    "dev:watch": "tsx watch src/main.ts",
+    "server": "tsx src/server.ts",
+    "server:watch": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/community": "^1.0.3",
+    "@langchain/core": "^1.0.5",
+    "@langchain/openai": "^1.1.1",
+    "@langchain/textsplitters": "^1.0.0",
+    "axios": "^1.13.2",
+    "chromadb": "^3.1.4",
+    "chromadb-default-embed": "^2.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "langchain": "^1.0.4",
+    "nodemon": "^3.1.11"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

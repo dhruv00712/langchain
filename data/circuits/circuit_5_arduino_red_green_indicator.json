@@ -1,0 +1,38 @@
+{
+  "name": "Arduino Red & Green LED Object Detection Indicator",
+  "category": "Sensor Indicator Circuits",
+  "description": "Arduino Nano detects objects using HC-SR04 ultrasonic sensor and drives two LEDs: Red LED (object detected) and Green LED (no object). Both LEDs use resistors for safe operation.",
+  
+  "componentsUsed": [
+    "Arduino Nano",
+    "HC-SR04 Ultrasonic Sensor",
+    "LED (Red)",
+    "LED (Green)",
+    "Two 220Ω Resistors",
+    "Jumper Wires"
+  ],
+
+  "connections": [
+    "HC-SR04 VCC → Arduino 5V",
+    "HC-SR04 GND → Arduino GND",
+    "HC-SR04 TRIG → Arduino D9",
+    "HC-SR04 ECHO → Arduino D10",
+
+    "Arduino D12 → 220Ω Resistor → Red LED Anode (+)",
+    "Red LED Cathode (-) → GND",
+
+    "Arduino D13 → 220Ω Resistor → Green LED Anode (+)",
+    "Green LED Cathode (-) → GND",
+
+    "Arduino Nano powered using USB or external 5V"
+  ],
+
+  "howItWorks": "Arduino measures distance. If an object is closer than the threshold, the red LED turns ON and green OFF. If distance is safe, the green LED turns ON and red OFF.",
+
+  "powerNotes": "Both LEDs and the sensor draw low current, safe for Arduino.",
+
+  "safetyNotes": [
+    "Use resistors for both LEDs to avoid burning them.",
+    "Ensure stable 5V supply for ultrasonic sensor."
+  ]
+}

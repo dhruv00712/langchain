@@ -1,0 +1,28 @@
+{
+  "name": "Basic LED Circuit With Power Supply and Resistor",
+  "category": "Basic Electronics",
+  "description": "A simple safe LED circuit powered by a 5V source using a 220Ω resistor to protect the LED from burning.",
+
+  "componentsUsed": [
+    "Power Supply (5V)",
+    "LED (Red)",
+    "220Ω Resistor",
+    "Jumper Wires"
+  ],
+
+  "connections": [
+    "Power Supply +5V → 220Ω Resistor",
+    "220Ω Resistor → LED Anode (+)",
+    "LED Cathode (-) → Power Supply GND",
+    "LED glows safely because the resistor limits current"
+  ],
+
+  "howItWorks": "The resistor limits current flowing through the LED to prevent damage. When power is applied, current flows through the resistor and LED, causing it to glow steadily.",
+
+  "powerNotes": "Use any 5V regulated power supply (Arduino 5V, bench supply, USB output).",
+
+  "safetyNotes": [
+    "Never connect LED directly to power without resistor.",
+    "Ensure correct polarity: long leg is anode (+)."
+  ]
+}

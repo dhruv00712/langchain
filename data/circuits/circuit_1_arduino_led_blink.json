@@ -1,0 +1,29 @@
+{
+  "name": "Arduino Nano LED Blink (No Resistor)",
+  "category": "Beginner Arduino Circuits",
+  "description": "Basic LED blink using Arduino Nano without any resistor. LED is connected directly to a digital pin to demonstrate the simplest blinking example.",
+  
+  "componentsUsed": [
+    "Arduino Nano",
+    "LED (Red)",
+    "Jumper Wires",
+    "9V Battery"
+  ],
+
+  "connections": [
+    "Battery + (positive) → Arduino Nano VIN",
+    "Battery - (negative) → Arduino Nano GND",
+    "Arduino Nano D13 → LED Anode (+)",
+    "LED Cathode (-) → Arduino GND"
+  ],
+
+  "howItWorks": "Arduino toggles the D13 pin HIGH and LOW with a delay, causing the LED to blink. The LED is connected directly without resistor, which works for demonstration but is not safe for long-term use.",
+
+  "powerNotes": "Circuit is powered using a 9V battery connected to VIN and GND.",
+  
+  "safetyNotes": [
+    "Not recommended for continuous use because LED can draw excess current.",
+    "Ensure correct battery polarity to avoid damage.",
+    "Running without resistor is only safe for quick testing."
+  ]
+}

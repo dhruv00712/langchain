@@ -1,0 +1,32 @@
+{
+  "name": "Arduino Ultrasonic Sensor With Red LED Alert",
+  "category": "Intermediate Sensor Circuits",
+  "description": "Arduino Nano detects objects using an HC-SR04 ultrasonic sensor and lights a red LED through a 220Ω resistor when an object is close.",
+  
+  "componentsUsed": [
+    "Arduino Nano",
+    "HC-SR04 Ultrasonic Sensor",
+    "LED (Red)",
+    "220Ω Resistor",
+    "Jumper Wires"
+  ],
+
+  "connections": [
+    "HC-SR04 VCC → Arduino 5V",
+    "HC-SR04 GND → Arduino GND",
+    "HC-SR04 TRIG → Arduino D9",
+    "HC-SR04 ECHO → Arduino D10",
+    "Arduino D13 → 220Ω Resistor → Red LED Anode (+)",
+    "Red LED Cathode (-) → GND",
+    "Arduino powered using USB or 5V regulated supply"
+  ],
+
+  "howItWorks": "Arduino measures distance using ultrasonic pulses. If the detected distance is below the threshold, Arduino turns ON the red LED via a safe current-limiting resistor.",
+
+  "powerNotes": "Arduino powers both sensor and LED (low current).",
+
+  "safetyNotes": [
+    "Always use a resistor with LED.",
+    "Avoid powering Arduino with more than 12V if using VIN."
+  ]
+}

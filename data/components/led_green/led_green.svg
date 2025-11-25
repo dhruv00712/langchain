@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="0.21467in" height="0.40565in" viewBox="0 0 21.467 40.565" xmlns="http://www.w3.org/2000/svg">
+<g id="green_led">
+  <rect id="connector0pin" x="4.793" y="35.307" fill="none" width="2.989" height="1"/>
+  <rect id="connector1pin" x="14.793" y="35.307" fill="none" width="2.992" height="1"/>
+
+  <line stroke-linecap="round" x1="6.287" y1="35.307" x2="6.287" y2="80" stroke="#8C8C8C" stroke-width="2.988"/>
+  <line stroke-linecap="round" x1="16.29" y1="35.307" x2="16.29" y2="80" stroke="#8C8C8C" stroke-width="2.988"/>
+
+  <!-- LED body -->
+  <g>
+    <path opacity="0.3" fill="#00D300" d="M19.685,18.057V9.845C19.685,4.41,15.285,0,9.844,0C4.41,0,0,4.402,0,9.845v18.957
+      c2.047,2.293,5.69,3.823,9.844,3.823c6.416,0,11.623-3.636,11.623-8.138v-2.116C21.466,20.784,20.808,19.31,19.685,18.057z"/>
+    <ellipse opacity="0.25" fill="#00D300" cx="9.844" cy="22.37" rx="9.843" ry="6.89"/>
+  </g>
+</g>
+</svg>

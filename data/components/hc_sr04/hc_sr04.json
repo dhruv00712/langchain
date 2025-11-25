@@ -1,0 +1,44 @@
+{
+  "name": "HC-SR04 Ultrasonic Distance Sensor",
+  "category": "Distance Sensor",
+  "description": "The HC-SR04 is an ultrasonic ranging sensor capable of measuring distances from 2cm to 400cm using sound waves.",
+  "svgPath": "./hc_sr04.svg",
+
+  "pinout": [
+    { "pin": "VCC", "voltage": "5V", "type": "power" },
+    { "pin": "GND", "type": "ground" },
+    { "pin": "TRIG", "type": "input", "description": "Trigger input pulse" },
+    { "pin": "ECHO", "type": "output", "description": "Echo pulse output" }
+  ],
+
+  "technicalSpecifications": {
+    "operatingVoltage": "5V",
+    "operatingCurrent": "15mA",
+    "operatingTemperature": "-15°C to +70°C",
+    "range": "2cm to 400cm",
+    "accuracy": "±3mm",
+    "frequency": "40kHz"
+  },
+
+  "operatingVoltage": "5V",
+  "operatingTemperature": "-15°C to +70°C",
+
+  "connections": [
+    "VCC → Arduino 5V",
+    "GND → Arduino GND",
+    "TRIG → Arduino D9",
+    "ECHO → Arduino D10"
+  ],
+
+  "applications": [
+    "Obstacle detection",
+    "Parking systems",
+    "Robotics",
+    "Distance measurement devices"
+  ],
+
+  "safetyNotes": [
+    "Only operate at 5V.",
+    "Avoid humidity and direct water exposure."
+  ]
+}

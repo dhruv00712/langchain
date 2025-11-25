@@ -1,0 +1,36 @@
+{
+  "name": "9V Battery",
+  "category": "Power Source",
+  "description": "A standard 9V alkaline battery used to power Arduino and small electronic circuits.",
+  "svgPath": "./battery_9v.svg",
+
+  "pinout": [
+    { "pin": "Positive (+)", "voltage": "9V" },
+    { "pin": "Negative (-)", "voltage": "0V (Ground)" }
+  ],
+
+  "technicalSpecifications": {
+    "chemistry": "Alkaline",
+    "capacity": "500–600 mAh",
+    "maxDischarge": "1A peak"
+  },
+
+  "operatingVoltage": "9V",
+  "operatingTemperature": "-20°C to +54°C",
+
+  "connections": [
+    "Positive → VIN (Arduino) or regulator",
+    "Negative → GND"
+  ],
+
+  "applications": [
+    "Portable Arduino projects",
+    "Wireless circuits",
+    "Battery-powered sensors"
+  ],
+
+  "safetyNotes": [
+    "Never short the terminals.",
+    "Disconnect battery when not in use."
+  ]
+}

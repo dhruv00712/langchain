@@ -1,0 +1,40 @@
+{
+  "name": "Green LED (5mm)",
+  "category": "Indicator",
+  "description": "A 5mm green Light Emitting Diode used for indication and visual signaling in circuits.",
+  "svgPath": "./led_green.svg",
+
+  "pinout": [
+    { "pin": "Anode (+)", "type": "positive" },
+    { "pin": "Cathode (-)", "type": "ground" }
+  ],
+
+  "technicalSpecifications": {
+    "forwardVoltage": "2.0V–3.2V",
+    "forwardCurrent": "20mA",
+    "maximumPeakCurrent": "30mA",
+    "operatingTemperature": "-40°C to +85°C"
+  },
+
+  "operatingVoltage": "2.1V (via resistor)",
+  "operatingTemperature": "-40°C to +85°C",
+
+  "connections": [
+    "Anode → Arduino digital pin (via 220Ω–500Ω resistor)",
+    "Cathode → GND"
+  ],
+
+  "applications": [
+    "Indicators",
+    "Power status lights",
+    "Sensor output signals",
+    "Debugging circuits"
+  ],
+
+  "safetyNotes": [
+    "Always use a current-limiting resistor.",
+    "Do not exceed 20mA continuous current.",
+    "Avoid reverse voltage above 5V.",
+    "Excessive heat can reduce LED lifespan."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Red LED (5mm)",
+  "category": "Indicator",
+  "description": "A 5mm red Light Emitting Diode used for indication and visual signaling in circuits.",
+  "svgPath": "./led_red.svg",
+
+  "pinout": [
+    { "pin": "Anode (+)", "type": "positive" },
+    { "pin": "Cathode (-)", "type": "ground" }
+  ],
+
+  "technicalSpecifications": {
+    "forwardVoltage": "1.8V–2.2V",
+    "forwardCurrent": "20mA",
+    "operatingTemperature": "-40°C to +85°C"
+  },
+
+  "operatingVoltage": "2V (via resistor)",
+  "operatingTemperature": "-40°C to +85°C",
+
+  "connections": [
+    "Anode → Arduino digital pin (via 220Ω resistor)",
+    "Cathode → GND"
+  ],
+
+  "applications": [
+    "Indicators",
+    "Status lights",
+    "Debug signals"
+  ],
+
+  "safetyNotes": [
+    "Always use a current-limiting resistor.",
+    "Do not exceed 20mA current."
+  ]
+}

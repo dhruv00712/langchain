@@ -1,0 +1,49 @@
+{
+  "name": "Arduino Nano",
+  "category": "Microcontroller",
+  "description": "A compact and powerful ATmega328P-based microcontroller board used for embedded electronics and prototyping.",
+  "svgPath": "./arduino_nano.svg",
+
+  "pinout": [
+    { "pin": "5V", "type": "power", "voltage": "5V" },
+    { "pin": "3.3V", "type": "power", "voltage": "3.3V" },
+    { "pin": "GND", "type": "ground" },
+    { "pin": "VIN", "type": "power_input", "voltage": "7-12V" },
+    { "pin": "D2–D13", "type": "digital_io" },
+    { "pin": "A0–A7", "type": "analog_inputs" },
+    { "pin": "TX1/RX0", "type": "serial" },
+    { "pin": "SDA/SCL", "type": "i2c" },
+    { "pin": "MOSI/MISO/SCK", "type": "spi" }
+  ],
+
+  "technicalSpecifications": {
+    "microcontroller": "ATmega328P",
+    "clockSpeed": "16 MHz",
+    "flashMemory": "32 KB",
+    "sram": "2 KB",
+    "eeprom": "1 KB"
+  },
+
+  "operatingVoltage": "5V",
+  "operatingTemperature": "-40°C to +85°C",
+
+  "connections": [
+    "5V → powers sensors and modules",
+    "GND → ground reference for all components",
+    "VIN → external power supply 7–12V",
+    "Digital pins (D2–D13) → sensors, modules, LEDs",
+    "Analog pins (A0–A7) → analog sensors"
+  ],
+
+  "applications": [
+    "Prototyping",
+    "Robotics",
+    "Sensor interfacing",
+    "IoT systems"
+  ],
+
+  "safetyNotes": [
+    "Do not supply more than 12V to VIN.",
+    "Do not draw more than 500mA from 5V regulator."
+  ]
+}

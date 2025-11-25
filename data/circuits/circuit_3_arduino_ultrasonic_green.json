@@ -1,0 +1,31 @@
+{
+  "name": "Arduino Ultrasonic Detection With Green LED Indicator",
+  "category": "Sensor Circuits",
+  "description": "Arduino Nano connected with an HC-SR04 ultrasonic sensor and a green LED indicator. LED turns on based on simple detection logic.",
+  
+  "componentsUsed": [
+    "Arduino Nano",
+    "HC-SR04 Ultrasonic Sensor",
+    "LED (Green)",
+    "Jumper Wires"
+  ],
+
+  "connections": [
+    "HC-SR04 VCC → Arduino 5V",
+    "HC-SR04 GND → Arduino GND",
+    "HC-SR04 TRIG → Arduino D9",
+    "HC-SR04 ECHO → Arduino D10",
+    "Green LED Anode (+) → Arduino D13",
+    "Green LED Cathode (-) → GND",
+    "Arduino Nano powered via USB or regulated 5V"
+  ],
+
+  "howItWorks": "Arduino triggers the ultrasonic sensor and reads the echo time to calculate distance. If the distance meets predefined condition, the green LED lights up.",
+
+  "powerNotes": "Arduino supplies 5V to HC-SR04 and LED.",
+
+  "safetyNotes": [
+    "HC-SR04 must be powered only at 5V.",
+    "Avoid pointing sensor at soft materials; they absorb sound."
+  ]
+}
